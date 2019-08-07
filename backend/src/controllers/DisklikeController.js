@@ -13,10 +13,6 @@ module.exports = {
       });
     }
 
-    if (targetDev.dislikes.includes(loggedDev._id)) {
-      console.log("Deu match");
-    }
-
     loggedDev.dislikes.push(targetDev._id);
     await loggedDev.save();
     return res.json(loggedDev);
