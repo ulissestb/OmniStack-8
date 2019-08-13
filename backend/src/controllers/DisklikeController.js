@@ -5,7 +5,7 @@ module.exports = {
     const { user } = req.headers;
 
     const loggedDev = await Dev.findById(user);
-    const targetDev = await devId.findById(devId);
+    const targetDev = await Dev.findById(devId);
 
     if (!targetDev) {
       return res.status(400).json({
