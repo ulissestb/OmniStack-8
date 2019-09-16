@@ -21,6 +21,9 @@ export default function Login() {
         autoCapitalize="none"
         autoCorrect={false}
       />
+      <Text>
+        Pra saber se ta funcionando
+      </Text>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Enviar</Text>
       </TouchableOpacity>
