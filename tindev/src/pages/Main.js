@@ -1,10 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
+
+import logo from "../assets/logo.png";
+import { SafeAreaView } from "react-navigation";
 
 export default function Main() {
   return (
-    <View>
-      <Text>Main</Text>
-    </View>
+    <SafeAreaView>
+      <Image source={logo} />
+    </SafeAreaView>
   );
 }
